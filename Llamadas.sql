@@ -8,19 +8,19 @@ ADD ciudad NVARCHAR(50) NULL;
 ALTER TABLE Cliente
 DROP COLUMN ciudad;
 
--- WHERE: Filtra registros basados en una condición.
+-- WHERE: Filtra registros basados en una condiciÃ³n.
 -- Ejemplo: Selecciona todos los productos con un precio mayor a 100.
 SELECT nombre, precio
 FROM Producto
 WHERE precio > 100;
 
 -- YEAR y DAY: Funciones para extraer partes de una fecha.
--- Ejemplo: Selecciona todas las ventas realizadas en el año 2024.
+-- Ejemplo: Selecciona todas las ventas realizadas en el aÃ±o 2024.
 SELECT *
 FROM Venta
 WHERE YEAR(fecha_venta) = 2024;
 
--- Ejemplo: Selecciona el día de la semana de la fecha de venta.
+-- Ejemplo: Selecciona el dÃ­a de la semana de la fecha de venta.
 SELECT fecha_venta, DAY(fecha_venta) AS dia_de_venta
 FROM Venta;
 
@@ -30,8 +30,8 @@ SELECT nombre, precio
 FROM Producto
 ORDER BY precio ASC;
 
--- TOP: Limita el número de registros devueltos.
--- Ejemplo: Selecciona los 3 productos más caros.
+-- TOP: Limita el nÃºmero de registros devueltos.
+-- Ejemplo: Selecciona los 3 productos mÃ¡s caros.
 SELECT TOP 3 nombre, precio
 FROM Producto
 ORDER BY precio DESC;
@@ -66,3 +66,14 @@ RIGHT JOIN Venta v ON c.id_cliente = v.id_cliente;
 -- Ejemplo: Selecciona todos los diferentes paises de origen de las marcas.
 SELECT DISTINCT pais_origen
 FROM Marca;
+
+
+ALTER TABLE Venta
+ADD id_empleado INT NULL,
+CONSTRAINT fk_venta_empleado FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado);
+
+SELECT v.id_cliente, c.nombre, SUM(v.total) AS total_ventas
+FROM Venta v
+JOIN Cliente c ON v.id_cliente = c.id_cliente
+GROUP BY v.id_cliente, c.nombre
+HAVING SUM(v.total) > 100;
