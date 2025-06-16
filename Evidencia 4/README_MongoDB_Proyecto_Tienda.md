@@ -206,7 +206,7 @@ db.detalles_compra.insertMany([
 | Ver colecciones           | `show collections`                                                              |
 | Ver todos los documentos  | `db.ventas.find().pretty()`                                                     |
 | Buscar por campo          | `db.personas.find({nombre: "Carlos"}).pretty()`                                |
-| Actualizar documento      | `db.personas.updateOne({_id: 1}, {$set: {telefono: "900000000"}})`              |
+| Actualizar documento      | `db.personas.updateOne({_id: 1}, {$set: {telefono: "936321950"}})`              |
 | Eliminar documento        | `db.ventas.deleteOne({_id: 1})`                                                 |
 
 ---
@@ -218,15 +218,3 @@ db.detalles_compra.insertMany([
 - Las relaciones complejas se deben manejar desde la lógica de tu aplicación, ya que MongoDB no hace JOINs nativamente.
 
 ---
-
-## 🧠 Recomendación
-
-Si vas a consultar datos que usualmente se obtienen con JOIN en SQL, evalúa si te conviene **incrustar** los documentos (por ejemplo: `detalles_venta` dentro de `ventas`).
-
----
-
-## ✍️ Autor
-
-Piero Adrián Delgado Chipana  
-Ingeniería de Software, Semestre V  
-2025
