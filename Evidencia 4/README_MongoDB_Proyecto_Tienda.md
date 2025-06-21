@@ -1,11 +1,9 @@
 # 📦 MySQL a MongoDB - Proyecto Tienda
-
-Este proyecto documenta la estructura y comandos necesarios para representar en **MongoDB** una base de datos originalmente diseñada en **MySQL** para una tienda. El modelo de Mongo aprovecha la flexibilidad de documentos y colecciones para representar entidades como `Persona`, `Cliente`, `Empleado`, `Producto`, `Venta`, etc.
-
 ---
 
 ## 📌 Comandos útiles
 
+<<<<<<< HEAD
 | Acción                            | Comando MongoDB                                                                 |
 |-----------------------------------|----------------------------------------------------------------------------------|
 | Crear base de datos               | `use proyectoDB`                                                                |
@@ -21,13 +19,16 @@ Este proyecto documenta la estructura y comandos necesarios para representar en 
 | Eliminar documento                | `db.ventas.deleteOne({ _id: 1 })`                                               |
 | Eliminar todos los documentos     | `db.productos.deleteMany({})`                                                   |
 | Eliminar una colección            | `db.productos.drop()`                                                           |                                    |
-| Contar documentos                 | `db.personas.countDocuments()`                                                  |
+| Contar documentos                 | `db.personas.countDocuments()`                                                  
 
 ---
 
 ## ✍️ Autores
 
+<<<<<<< HEAD
 Piero Adrián Delgado Chipana
 Sebastian Adriano Castro Mamani
 Davis Yovanny Arapa Chua
   
+=======
+
