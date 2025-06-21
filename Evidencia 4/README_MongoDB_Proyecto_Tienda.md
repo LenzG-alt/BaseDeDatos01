@@ -24,9 +24,9 @@
 
 ## ✍️ Autores
 
-Piero Adrián Delgado Chipana
-Sebastian Adriano Castro Mamani
-Davis Yovanny Arapa Chua
+# Piero Adrián Delgado Chipana
+# Sebastian Adriano Castro Mamani
+# Davis Yovanny Arapa Chua
   
 =======
 
