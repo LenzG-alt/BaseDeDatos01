@@ -3,7 +3,6 @@
 
 ## 📌 Comandos útiles
 
-<<<<<<< HEAD
 | Acción                            | Comando MongoDB                                                                 |
 |-----------------------------------|----------------------------------------------------------------------------------|
 | Crear base de datos               | `use proyectoDB`                                                                |
@@ -25,7 +24,6 @@
 
 ## ✍️ Autores
 
-<<<<<<< HEAD
 Piero Adrián Delgado Chipana
 Sebastian Adriano Castro Mamani
 Davis Yovanny Arapa Chua
